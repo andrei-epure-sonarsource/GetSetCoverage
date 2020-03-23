@@ -49,8 +49,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FooTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BarTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
