@@ -12,7 +12,8 @@ namespace GetSetTests
         public void TestSetter()
         {
             Bar bar = new Bar();
-            Assert.AreEqual(0, bar.ImplicitProperty);
+            Assert.AreEqual(0, bar.CoveredGet);
+            bar.CoveredSet = 1;
         }
     }
 }

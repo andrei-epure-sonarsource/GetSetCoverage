@@ -8,6 +8,6 @@ namespace GetSet
 {
     public class Bar
     {
-        public int ImplicitProperty { get; set; }
+        public int CoveredGet { get; set; } public int UncoveredProperty { get; set; } public int CoveredSet { get; set; }
     }
 }
