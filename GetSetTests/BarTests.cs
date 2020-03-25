@@ -9,11 +9,11 @@ namespace GetSetTests
     public class BarTests
     {
         [TestMethod]
-        public void TestSetter()
+        public void CallMethods()
         {
             Bar bar = new Bar();
-            Assert.AreEqual(0, bar.CoveredGet);
-            bar.CoveredSet = 1;
+            bar.BodyMethod();
+            bar.ArrowMethod(true);
         }
     }
 }
