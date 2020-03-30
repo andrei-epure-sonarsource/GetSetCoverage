@@ -15,5 +15,12 @@ namespace GetSetTests
             bar.BodyMethod();
             bar.ArrowMethod(true);
         }
+
+        [TestMethod]
+        public void CallBarViaFoo()
+        {
+            FooCallsBar fooCallsBar = new FooCallsBar();
+            fooCallsBar.CallBar(new Bar());
+        }
     }
 }
