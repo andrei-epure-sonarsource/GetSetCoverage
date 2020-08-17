@@ -1,5 +1,4 @@
-﻿using System;
-using GetSet;
+﻿using GetSet;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -12,8 +11,8 @@ namespace GetSetTests
         public void CallMethods()
         {
             Bar bar = new Bar();
-            bar.BodyMethod();
-            bar.ArrowMethod(true);
+            Assert.AreEqual(0, bar.BodyMethod());
+            Assert.AreEqual(0, bar.ArrowMethod(true));
         }
 
         [TestMethod]
